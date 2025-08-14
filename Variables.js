@@ -60,3 +60,5 @@ let value1 = 900719925124740998n;
 let result1 = value1 + 1n;
 console.log(result1);  // "900719925124740999n"
 console.log(typeof(result1));
+let f=null;
+console.log(typeof(f));
