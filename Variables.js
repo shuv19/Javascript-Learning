@@ -55,4 +55,3 @@ let c = abc * b;
 debugger;
 
 console.log(c);
-
