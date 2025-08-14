@@ -50,8 +50,12 @@ console.log(message); // Output: There are 8 jet planes in the battleground.
 let abc = 6;
 let b = 9;
 let c = abc * b;
-
 // stops the execution
 debugger;
-
 console.log(c);
+// BigInt value
+let value1 = 900719925124740998n;
+
+// add two big integers
+let result1 = value1 + 1n;
+console.log(result1);  // "900719925124740999n"
