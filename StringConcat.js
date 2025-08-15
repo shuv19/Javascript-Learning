@@ -120,3 +120,17 @@ console.log(sb2);   // the characters themselves
 charCount ->Tracks frequency of each character
 sb2       ->Stores unique characters that repeat
 count     ->Stores number of unique characters that repeat*/
+
+//Regex to create a slug from a title,Breaking down the regex /\s+/g
+/*  \s	Matches any whitespace character (space, tab, newline)
++	Matches one or more occurrences of the previous pattern
+/.../g	g = global flag, replaces all matches in the string, not just the first
+
+So /\s+/g → all groups of spaces → replaced with -
+let title = 'JavaScript Advanced String Handling';
+let slug = title.toLowerCase().replace(/\s+/g, '-');
+console.log(encodeURI(slug)); // Output: 'javascript-advanced-string-handling'
+// A slug is a URL-friendly version of a string, usually used in web addresses to identify a page in a readable way.SEO preference*/
+let title = 'JavaScript Advanced String Handling';
+let slug = title.toLowerCase().replace(/\s+/g, '-');
+console.log(encodeURI(slug)); // Output: 'javascript-advanced-string-handling'
