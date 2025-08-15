@@ -19,13 +19,14 @@ if (browser === "Chrome") {
 
 function checkGrade(score){
     if (score >= 90) {
-        console.log("Grade: A");
+        grade='A';
     } else if (score >= 80) {
-        console.log("Grade: B");
+        grade='B';
     } else if (score >= 70) {
-        console.log("Grade: C");
+        grade='C';
     } else {
-        console.log("Grade: D");
+        grade='D';
     }
+    console.log("Grade: " + grade);
 }
 checkGrade(85);
